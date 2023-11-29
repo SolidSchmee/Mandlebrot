@@ -27,7 +27,7 @@ int main()
 
     Text text("", font, 18);
     text.setPosition(10.0f, 10.0f);
-    text.setFillColor(Color::Green);
+    text.setFillColor(Color::Red);
 
     // Begin the main loop
     while (window.isOpen())
@@ -58,7 +58,7 @@ int main()
                     complexPlane.updateRender();
                     complexPlane.loadText(text);
                 }
-                State::CALCULATING;
+                //State::CALCULATING;
             }
 
             // Handle MouseMoved

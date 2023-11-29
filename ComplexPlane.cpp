@@ -110,9 +110,9 @@ int ComplexPlane::countIterations(Vector2f coord)
 
 void ComplexPlane::iterationsToRGB(size_t count, Uint8& r, Uint8& g, Uint8& b)
 {
-	r = (3.0 * count / MAX_ITER) * 100;  //(255 * (count) / (MAX_ITER)); 
-	g = (5.0 * count / MAX_ITER) * 255;//(255 * (count) / (MAX_ITER)); 
-	b = (1.0 * count / MAX_ITER) * 115;//(255 * (count) / (MAX_ITER));
+	r = (1.0 * count / MAX_ITER) * 100;  //(255 * (count) / (MAX_ITER)); 
+	g = (10.0 * count / MAX_ITER) * 255;//(255 * (count) / (MAX_ITER)); 
+	b = (1.0 * count / MAX_ITER) * 244;//(255 * (count) / (MAX_ITER));
 }
 
 Vector2f ComplexPlane::mapPixelToCoords(Vector2i mousePixel)
